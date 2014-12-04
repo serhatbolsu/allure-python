@@ -73,7 +73,7 @@ class AllureImpl(object):
       allure.stop_case(Status.PASSED)
       allure.start_case('test_two')
       allure.start_step('a demo step')
-      allure.attach('some file', 'a quick brown fox..', AttachmentType.TEXT)
+      allure.attach('a quick brown fox..', 'some file', AttachmentType.TEXT)
       allure.stop_step()
       allure.stop_case(Status.FAILED, 'failed for demo', 'stack trace goes here')
       allure.stop_suite()  # this writes XML into ./reports
